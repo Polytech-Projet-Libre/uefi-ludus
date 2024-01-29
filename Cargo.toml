@@ -1,0 +1,17 @@
+[package]
+name = "uefi-ludus"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ludus = { git = "https://github.com/TSnake41/ludus.git" }
+uefi-services = "0.23"
+log = "0.4"
+ps2 = "0.2"
+pc-keyboard = "0.7"
+
+[dependencies.uefi]
+version = "0.26"
+features = ["alloc", "logger"]
